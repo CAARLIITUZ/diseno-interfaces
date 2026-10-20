@@ -149,6 +149,20 @@ h2 {
 
 .contacto {
     border-radius: 25px 0 0 0;
+    
+}
+
+.secciones,
+.redes-sociales,
+.contacto{
+    transition: transform 0.5s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.secciones:hover,
+.redes-sociales:hover,
+.contacto:hover{  
+  /* Sombra más grande y difuminada para simular altura */
+  box-shadow: 0px 0px 20px 10px rgb(255, 255, 255);
 }
 
 .footer-columnas h3 {

@@ -53,6 +53,13 @@
     display: block;
 }
 
+.inst-card-vertical .inst-foto-ubi img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    display: block;
+}
+
 .inst-card-vertical .inst-descripcion {
     padding: 25px;
     font-size: 15px;
