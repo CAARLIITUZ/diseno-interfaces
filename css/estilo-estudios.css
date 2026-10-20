@@ -1,0 +1,169 @@
+/* ==========================================
+   ESTILOS EXCLUSIVOS PARA ESTUDIOS
+   (requiere cargar antes estilo.css)
+   ========================================== */
+
+.est-body-principal {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 80px 0 80px 0;
+    padding: 0 120px;
+}
+
+/* Tarjeta: título en la primera fila (100%), el resto debajo */
+.est-tarjeta {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.est-titulo {
+    width: 100%;
+    background-color: #335375;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+.est-titulo h2 {
+    margin: 0;
+    font-size: 28px;
+}
+
+
+/* --- BLOQUE SUPERIOR: Backend / Frontend (4 columnas de 25%) --- */
+.est-foto-1,
+.est-desc-1,
+.est-foto-2,
+.est-desc-2 {
+    width: 25%;
+    box-sizing: border-box;
+}
+
+.est-desc-1,
+.est-desc-2{
+    margin-top: 40px;
+}
+
+.est-foto-1 img,
+.est-foto-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: #f8f9fa;
+    display: block;
+}
+
+.est-desc-1,
+.est-desc-2 {
+    padding: 20px;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.est-desc-1 p,
+.est-desc-2 p {
+    margin: 0 0 10px 0;
+}
+
+.est-desc-1 ul,
+.est-desc-2 ul {
+    margin: 0 0 0 15px;
+    padding: 0;
+}
+
+.est-desc-1 li,
+.est-desc-2 li {
+    margin-top: 30px;
+    margin-bottom: 8px;
+}
+
+
+/* --- FILA INFERIOR: Experiencia y Conclusión (foto 50% / texto 50%) --- */
+.est-fila-inferior {
+    display: flex;
+    gap: 40px;
+}
+
+.est-tarjeta-inferior {
+    flex: 1;
+}
+
+.est-foto {
+    width: 50%;
+}
+
+.est-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.est-descripcion {
+    margin-top: 40px;
+    width: 50%;
+    padding: 20px;
+    font-size: 15px;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+.est-descripcion p {
+    margin: 0 0 12px 0;
+}
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+ 
+@media (max-width: 1100px) {
+    .est-body-principal {
+        margin: 40px 0;
+        padding: 0 30px;
+    }
+ 
+    /* Bloque superior: 2 columnas (foto + texto) por fila */
+    .est-foto-1,
+    .est-desc-1,
+    .est-foto-2,
+    .est-desc-2 {
+        width: 50%;
+    }
+ 
+    /* Experiencia y Conclusión una debajo de otra */
+    .est-fila-inferior {
+        flex-direction: column;
+    }
+ 
+    .est-tarjeta-inferior {
+        flex: none;
+    }
+}
+ 
+@media (max-width: 700px) {
+    .est-body-principal {
+        padding: 0 15px;
+    }
+ 
+    .est-titulo h2 {
+        font-size: 22px;
+    }
+ 
+    /* Todo apilado: foto arriba, texto debajo */
+    .est-foto-1,
+    .est-desc-1,
+    .est-foto-2,
+    .est-desc-2,
+    .est-foto,
+    .est-descripcion {
+        width: 100%;
+    }
+ 
+    .est-foto img {
+        height: 250px;
+    }
+}

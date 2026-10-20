@@ -1,0 +1,156 @@
+/* ==========================================
+   ESTILOS EXCLUSIVOS PARA INSTALACIONES
+   (requiere cargar antes estilo.css)
+   ========================================== */
+
+/* Dos columnas: tarjeta vertical (1 parte) + columna derecha (2 partes) */
+.inst-body-principal {
+    display: flex;
+    gap: 60px;
+    margin: 80px 0 80px 0;
+    padding: 0 140px;
+}
+
+.inst-card-vertical {
+    flex: 1;
+}
+
+.inst-columna-derecha {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Estructura general de las tarjetas */
+.inst-tarjeta {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.inst-titulo {
+    background-color: #335375;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 12px 10px;
+}
+
+.inst-titulo h2 {
+    margin: 0;
+    font-size: 28px;
+    font-family: serif;
+}
+
+
+/* --- TARJETA VERTICAL (izquierda) --- */
+.inst-card-vertical .inst-foto img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+}
+
+.inst-card-vertical .inst-descripcion {
+    padding: 25px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.inst-card-vertical .inst-descripcion p {
+    margin-top: 40px;
+}
+
+
+/* --- TARJETAS HORIZONTALES (derecha): foto izquierda, texto derecha --- */
+.inst-contenido-horizontal {
+    display: flex;
+    flex: 1;
+}
+
+.inst-contenido-horizontal .inst-foto {
+    flex: 0 0 45%;
+}
+
+.inst-contenido-horizontal .inst-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.inst-contenido-horizontal .inst-descripcion {
+    flex: 1;
+    margin-top: 20px;
+    margin-left: 30px;
+    padding: 20px;
+    font-size: 15px;
+    line-height: 1.4;
+    box-sizing: border-box;
+}
+
+.inst-contenido-horizontal .inst-descripcion p {
+    margin: 20px 0;
+}
+
+.inst-contenido-horizontal .inst-descripcion ul {
+    margin: 0 0 10px 15px;
+    padding: 0;
+}
+
+.inst-contenido-horizontal .inst-descripcion li {
+    margin-bottom: 20px;
+}
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+ 
+@media (max-width: 1100px) {
+    /* Tarjeta vertical y columna derecha una debajo de otra */
+    .inst-body-principal {
+        flex-direction: column;
+        gap: 40px;
+        margin: 40px 0;
+        padding: 0 30px;
+    }
+ 
+    .inst-card-vertical,
+    .inst-columna-derecha {
+        flex: none;
+    }
+ 
+    .inst-card-vertical .inst-foto img {
+        height: 350px;
+    }
+}
+ 
+@media (max-width: 700px) {
+    .inst-body-principal {
+        padding: 0 15px;
+    }
+ 
+    .inst-titulo h2 {
+        font-size: 22px;
+    }
+ 
+    /* Foto arriba, texto debajo */
+    .inst-contenido-horizontal {
+        flex-direction: column;
+    }
+ 
+    .inst-contenido-horizontal .inst-foto {
+        flex: none;
+    }
+ 
+    .inst-contenido-horizontal .inst-foto img {
+        height: 250px;
+    }
+ 
+    .inst-contenido-horizontal .inst-descripcion {
+        flex: none;
+        margin-left: 0;
+    }
+}
