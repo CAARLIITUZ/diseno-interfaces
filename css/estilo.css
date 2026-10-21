@@ -107,6 +107,7 @@ h2 {
 
 .menu p:hover{
     color: #FFFFFF;
+    
 }
 
 .menu div:hover{
@@ -163,6 +164,8 @@ h2 {
 .contacto:hover{  
   /* Sombra más grande y difuminada para simular altura */
   box-shadow: 0px 0px 20px 10px rgb(255, 255, 255);
+        transform: translateY(-10px);
+
 }
 
 .footer-columnas h3 {
@@ -209,11 +212,19 @@ h2 {
     text-align: center;
     padding: 12px 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+        transition: transform 0.5s ease, box-shadow 0.5s ease, background-color 0.5s ease;
+
 }
 
 .copyright p {
     font-size: 12px;
     margin: 0;
+}
+
+.copyright:hover{
+    box-shadow: 10px 0px 20px 10px rgb(255, 255, 255);
+      transform: translateY(-10px);
+
 }
 
 

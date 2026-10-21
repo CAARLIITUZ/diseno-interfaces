@@ -45,14 +45,13 @@
 
 .est-desc-1,
 .est-desc-2{
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .est-foto-1 img,
 .est-foto-2 img {
     width: 100%;
     height: 100%;
-    object-fit: fill;
     background-color: #f8f9fa;
     display: block;
 }
@@ -93,7 +92,7 @@
 }
 
 .est-foto {
-    width: 50%;
+    width: 40%;
 }
 
 .est-foto img {
@@ -104,7 +103,7 @@
 }
 
 .est-descripcion {
-    margin-top: 40px;
+    margin-top: 20px;
     width: 50%;
     padding: 20px;
     font-size: 15px;
