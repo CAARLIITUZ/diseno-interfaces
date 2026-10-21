@@ -52,7 +52,7 @@
 .est-foto-2 img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: fill;
     background-color: #f8f9fa;
     display: block;
 }
